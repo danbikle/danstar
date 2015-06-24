@@ -6,7 +6,7 @@ describe 'Hello danstar', :js => true do
     visit '/cstar/index'
     page.fill_in 'uname1', :with => 'ab'
     page.fill_in 'uname2', :with => 'danbikle'
-    click_button('submit')
+    click_on('submit')
     byebug
     p 'hello'
     end
