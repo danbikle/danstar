@@ -2,7 +2,11 @@
 
 This app was developed on Ubuntu 14.04
 
-The easiest way to deploy it is Heroku:
+I have deployed it to this URL:
+
+https://danstar.herokuapp.com
+
+The easiest way for you to deploy it is, use Heroku:
 
 - cd ~/Downloads/
 - wget https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz
