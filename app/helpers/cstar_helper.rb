@@ -1,0 +1,2 @@
+module CstarHelper
+end
