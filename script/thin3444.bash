@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ~/sites/codestar/script/thin3444.bash
+# ~/sites/danstar/script/thin3444.bash
 
-cd ~/sites/codestar/
+cd ~/sites/danstar/
 
 bin/thin -p 3444 start
 

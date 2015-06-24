@@ -23,8 +23,8 @@ Installation steps are listed below:
 - gem install rails -v 4.2.2
 - mkdir ~/sites/
 - cd    ~/sites/
-- git clone codestar
-- cd codestar
+- git clone https://github.com/danbikle/danstar.git
+- cd danstar
 - bundle install
 - bin/rake db:migrate
 - script/thin3444.bash
@@ -53,8 +53,8 @@ Steps I used to develop the app are listed below.
 - gem install rails -v 4.2.2
 - mkdir ~/sites/
 - cd    ~/sites/
-- rails new codestar
-- cd codestar
+- rails new danstar
+- cd danstar
 - rbenv local 2.2.2
 - vi Gemfile
 - bundle install
