@@ -14,9 +14,10 @@ The easiest way to deploy it is Heroku:
 - cd danstar
 - ~/heroku-client/bin/heroku apps:create hellostar
 - git push heroku master
+- navigate to hellostar.herokuapp.com
 
-
-Installation steps are listed below:
+If you want to run this app on your laptop,
+installation steps are listed below:
 
 - Install Ubuntu 14.04 on the laptop:
 - http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-desktop-amd64.iso
