@@ -1,0 +1,16 @@
+%h1 Github User Comparison
+
+-if @count1 > @count2
+  %h3 Star Count Winner:
+  =render 'uname1'
+  %hr/
+  %h3 Second Place:
+  =render 'uname2'
+  %hr/
+-else
+  %h3 Star Count Winner:
+  =render 'uname2'
+  %hr/
+  %h3 Second Place:
+  =render 'uname1'
+  %hr/

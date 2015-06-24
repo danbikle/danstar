@@ -1,0 +1,16 @@
+
+%a(href='https://github.com/#{@uname1}' target='x')
+  https://github.com/#{@uname1}
+%br/
+#{@count1}
+stars
+%br/
+Avg:
+#{@avgstr1.to_s[0..4]}
+stars per repository
+%ul
+  - @u1rs.each do |repo|
+    %li
+      Star Count: #{repo['star_count']}
+      %a(href='https://github.com/#{repo['full_name']}' target='g')
+        https://github.com/#{repo['full_name']}

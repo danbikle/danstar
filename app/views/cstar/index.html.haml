@@ -1,2 +1,9 @@
-%h1 Cstar#index
-%p Find me in app/views/cstar/index.html.haml
+%h1 Code Star
+%p Enter two github usernames:
+
+%form(id="form_cstar" action="/cstar/submit2names" accept-charset="UTF-8" method="get")
+  %label(for="name1") Name1
+  %input#name1(type="text" name="uname1")
+  %label(for="name2") Name2
+  %input#name2(type="text" name="uname2")
+  %input(type="submit" name="submit" value="Submit")
