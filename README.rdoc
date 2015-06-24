@@ -1,28 +1,76 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app was developed on Ubuntu 14.04
 
-Things you may want to cover:
+Installation steps are listed below:
 
-* Ruby version
+- Install Ubuntu 14.04 on the laptop:
+- http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-desktop-amd64.iso
+- After I install Ubuntu, I enhance it:
+- apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libsqlite3-dev gitk postgresql postgresql-server-dev-all libpq-dev emacs wget curl chromium-browser
+- apt-get update
+- apt-get upgrade
+- shutdown -r now
+- login
+- git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+- git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+- vi .bashrc
+- bash
+- ls -la ~/.rbenv/plugins/ruby-build/share/ruby-build/
+- rbenv install 2.2.2
+- rbenv global  2.2.2
+- gem install pg -v 0.18.2 
+- gem install rails -v 4.2.2
+- mkdir ~/sites/
+- cd    ~/sites/
+- git clone codestar
+- cd codestar
+- bundle install
+- bin/rake db:migrate
+- script/thin3444.bash
+- Navigate to localhost:3444
+- Fill in the form and verify it works.
 
-* System dependencies
 
-* Configuration
+Steps I used to develop the app are listed below.
 
-* Database creation
+- Install Ubuntu 14.04 on the laptop:
+- http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-desktop-amd64.iso
+- After I install Ubuntu, I enhance it:
+- apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libsqlite3-dev gitk postgresql postgresql-server-dev-all libpq-dev emacs wget curl chromium-browser
+- apt-get update
+- apt-get upgrade
+- shutdown -r now
+- login
+- git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+- git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+- vi .bashrc
+- bash
+- ls -la ~/.rbenv/plugins/ruby-build/share/ruby-build/
+- rbenv install 2.2.2
+- rbenv global  2.2.2
+- gem install pg -v 0.18.2 
+- gem install rails -v 4.2.2
+- mkdir ~/sites/
+- cd    ~/sites/
+- rails new codestar
+- cd codestar
+- rbenv local 2.2.2
+- vi Gemfile
+- bundle install
+- git init
+- git add .
+- git commit -am hello
+- Now I should create a repo on bitbucket
+- git remote add bit git@bitbucket.org:bikle/danhasinfo.git
+- git push bit master
+- bin/rails g controller cstar index submit2names
+- bundle binstub rspec-core
+- bundle binstub thin
+- bundle binstub rest-client
+- vi config/routes.rb
+- vi app/views/cstar/index.html.haml
+- vi app/controllers/cstar_controller.rb
+- mkdir script
+- vi script/thin3444.bash
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
