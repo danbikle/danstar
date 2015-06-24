@@ -7,7 +7,6 @@ describe 'Hello danstar', :js => true do
     page.fill_in 'uname1', :with => 'ab'
     page.fill_in 'uname2', :with => 'danbikle'
     click_on('submit')
-    byebug
-    p 'hello'
+    expect(page).to have_content 'Star Count Winner'
     end
 end
