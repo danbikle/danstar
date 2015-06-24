@@ -2,6 +2,20 @@
 
 This app was developed on Ubuntu 14.04
 
+The easiest way to deploy it is Heroku:
+
+- cd ~/Downloads/
+- wget https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz
+- tar zxf heroku-client.tgz
+- mv heroku-client ~
+- mkdir ~/sites/
+- cd    ~/sites/
+- git clone https://github.com/danbikle/danstar.git
+- cd danstar
+- ~/heroku-client/bin/heroku apps:create hellostar
+- git push heroku master
+
+
 Installation steps are listed below:
 
 - Install Ubuntu 14.04 on the laptop:
